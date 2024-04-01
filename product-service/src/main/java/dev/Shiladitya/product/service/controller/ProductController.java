@@ -3,6 +3,7 @@ package dev.Shiladitya.product.service.controller;
 import dev.Shiladitya.product.service.dto.ProductRequest;
 import dev.Shiladitya.product.service.dto.ProductResponse;
 import dev.Shiladitya.product.service.service.ProductService;
+import dev.Shiladitya.product.service.util.ProductServiceUtil;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -10,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/v1/product")
+@RequestMapping(ProductServiceUtil.API_URI_PRODUCTS)
 @RequiredArgsConstructor
 public class ProductController {
 
